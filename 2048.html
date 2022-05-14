@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+  <head>
+    <title>2048</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="2048.css">
+  </head>
+  <body>
+	<b id="bg_img"></b>
+	<ul id="skin">
+		<li><button>中国</button></li>
+		<li><button>欧美</button></li>
+		<li><button>法国</button></li>
+		<li><button>日韩</button></li>
+	</ul>
+    <p id="p_score">SCORE:<span id="score">0</span></p>
+    <div id="gridPanel">
+      <div id="c00" class="cell"></div>
+      <div id="c01" class="cell"></div>
+      <div id="c02" class="cell"></div>
+      <div id="c03" class="cell"></div>
+
+      <div id="c10" class="cell"></div>
+      <div id="c11" class="cell"></div>
+      <div id="c12" class="cell"></div>
+      <div id="c13" class="cell"></div>
+
+      <div id="c20" class="cell"></div>
+      <div id="c21" class="cell"></div>
+      <div id="c22" class="cell"></div>
+      <div id="c23" class="cell"></div>
+
+      <div id="c30" class="cell"></div>
+      <div id="c31" class="cell"></div>
+      <div id="c32" class="cell"></div>
+      <div id="c33" class="cell"></div>
+    </div>
+	<p id="p_reset"><a href="javascript:game.start();">重新开始</a></p>
+  <div id="gameOver">
+      <p>GAME OVER!<br>
+        SCORE:<span id="final">0</span><br>
+        <a class="btn" href="javascript:game.start();">TRY AGAIN!</a>
+      </p>
+  </div>
+	<div id="tScore"></div>
+  <script src="2048.js"></script>
+  </body>
+</html>
