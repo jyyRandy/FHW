@@ -72,6 +72,7 @@ var game={
 				if(r<this.RN-1&&(this.data[r][c]==this.data[r+1][c])) return false;
 		}
 	}
+	  return true;
   },
   moveLeftInRow(r){
     
